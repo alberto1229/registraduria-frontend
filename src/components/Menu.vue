@@ -23,16 +23,13 @@
                     <list-group-item>
                         <router-link class="block py-2 px-4 " to="resultadosmesa">Resultados por Partido</router-link>
                     </list-group-item>
-                    <list-group-item>
-                        <router-link class="block py-2 px-4 " to="nuevoresultadocandiddato">Nuevo Resultado Candidato
-                        </router-link>
-                    </list-group-item>
+
                 </list-group>
             </dropdown>
             <dropdown text="Admin">
                 <template #trigger>
                     <span
-                        class="cursor-pointer font-semibold hover:text-blue-700 focus:text-blue-700 flex items-center">Admin<svg
+                        class="cursor-pointer font-semibold hover:text-blue-700 focus:text-blue-700 flex items-center">Administración<svg
                             class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -62,7 +59,7 @@ const router = useRouter()
 
 function logOut() {
     localStorage.clear();
-    alert("Sesión Cerrada");
+    alert("Sesión Cerrada.");
     router.push({ name: "logIn" })
 }
 </script>
