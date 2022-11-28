@@ -89,7 +89,7 @@
     <Teleport to="body">
         <modal :show="ModalNew" @close="ModalNew = false">
             <template #header>
-                <h3 class="font-bold">Nueva partido</h3>
+                <h3 class="font-bold">Nuevo partido</h3>
             </template>
             <template #body>
                 <form v-on:submit.prevent="newItem()">
@@ -225,7 +225,7 @@ export default {
                 )
                 .then((result) => {
                     this.ModalUpdate = false;
-                    alert("Item actualizado correctamente")
+                    alert("Partido actualizado correctamente")
                     this.getData()
                     console.log(result)
                 })
@@ -241,7 +241,7 @@ export default {
                 )
                 .then((result) => {
                     this.ModalNew = false;
-                    alert("Item creado correctamente")
+                    alert("Partido creado correctamente")
                     this.getData()
                     console.log(result)
                 })

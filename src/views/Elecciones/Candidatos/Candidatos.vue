@@ -267,7 +267,7 @@ export default {
                 )
                 .then((result) => {
                     this.ModalUpdate = false;
-                    alert("Item actualizado correctamente")
+                    alert("Candidato actualizado correctamente")
                     this.getData()
                     console.log(result)
                 })
@@ -283,7 +283,7 @@ export default {
                 )
                 .then((result) => {
                     this.ModalNew = false;
-                    alert("Item creado correctamente")
+                    alert("Candidato creado correctamente")
                     this.getData()
                     console.log(result)
                 })
